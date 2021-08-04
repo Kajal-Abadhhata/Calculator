@@ -1,0 +1,66 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color:rgb(146, 141, 128);
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto)  repeat(5,100px);
+}
+.button{
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, .75);
+
+
+}
+.button:hover{
+    background-color: rgb(255, 255, 255, .9);
+}
+.all-clear{
+    grid-column: span 2;
+    background-color: cornflowerblue;
+}
+.equal{
+    grid-column: span 2;
+    background-color: cornflowerblue;
+}
+.display{
+    grid-column: 1 / -1;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+
+}
+.display1{
+    background-color:rgb(255, 255, 255, .75) ;
+    font-size: 1rem;
+
+}
+.display2{
+    background-color:white ;
+    font-size: 2rem;
+    
+
+    
+}
+.temp-result{
+    position: absolute;
+    background-color:rgb(255, 255, 255, .75) ;
+    font-size: 20px;
+    left: 10;
+    bottom: 0;
+    opacity: .4;
+
+}
